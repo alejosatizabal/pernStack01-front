@@ -24,10 +24,29 @@ function App() {
 
 export default App; */
 
-export default function App() {
+/* export default function App() {
   return (
     <div>
       Hello world
     </div>
+  )
+} */
+
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import TaskForm from './components/TaskForm';
+import TaskList from './components/TaskList';
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* <Route path='/' element={<TaskList/>} /> // Así interpreta a 'TaskList' como un componente */}
+        {/* <Route path='/' element={TaskList} /> // Así interpreta a 'TaskList' como una función */}
+        <Route path='/' element={<TaskList/>} />
+
+        <Route path='/tasks/new' element={<TaskForm/>} />
+        {/* Edit Route */}
+      </Routes>
+    </BrowserRouter>
   )
 }
