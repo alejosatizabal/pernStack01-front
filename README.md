@@ -34,6 +34,9 @@
     - También puede ser por
         'File -> Preferences - > Setings', buscar 'file.exclude'
 
+- Se instala el modulo react-router-dom
+    Estando en la carpeta de Front
+        npm i react-router-dom
 
 
 https://www.youtube.com/watch?v=_zGL_MU29zs&t=178s
