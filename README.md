@@ -40,4 +40,4 @@
 
 
 https://www.youtube.com/watch?v=_zGL_MU29zs&t=178s
-voy por 1:31:41
+voy por 1:37:03
