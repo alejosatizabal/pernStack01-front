@@ -32,21 +32,41 @@ export default App; */
   )
 } */
 
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
+import Menu from './components/Navbar'; // Se puede llamar Menu o cualquier otro nombre
+import { Container } from '@mui/material';
+
+// export default function App() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         {/* <Route path='/' element={<TaskList/>} /> // Así interpreta a 'TaskList' como un componente */}
+//         {/* <Route path='/' element={TaskList} /> // Así interpreta a 'TaskList' como una función */}
+//         <Route path='/' element={<TaskList />} />
+
+//         <Route path='/tasks/new' element={<TaskForm />} />
+//         {/* Edit Route */}
+//       </Routes>
+//     </BrowserRouter>
+//   )
+// }
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        {/* <Route path='/' element={<TaskList/>} /> // Así interpreta a 'TaskList' como un componente */}
-        {/* <Route path='/' element={TaskList} /> // Así interpreta a 'TaskList' como una función */}
-        <Route path='/' element={<TaskList/>} />
+      <Menu />
+      <Container>
+        <Routes>
+          {/* <Route path='/' element={<TaskList/>} /> // Así interpreta a 'TaskList' como un componente */}
+          {/* <Route path='/' element={TaskList} /> // Así interpreta a 'TaskList' como una función */}
+          <Route path='/' element={<TaskList />} />
 
-        <Route path='/tasks/new' element={<TaskForm/>} />
-        {/* Edit Route */}
-      </Routes>
+          <Route path='/tasks/new' element={<TaskForm />} />
+          {/* Edit Route */}
+        </Routes>
+      </Container>
     </BrowserRouter>
   )
 }
