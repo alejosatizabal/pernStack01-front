@@ -50,7 +50,16 @@
     
     - Se instala el modulo de iconos
         npm install @mui/icons-material
-    
+
+- Se modifica el archivo 'index.css' usando /**/
+
+- Ver: propiedades de FlexBox
 
 https://www.youtube.com/watch?v=_zGL_MU29zs&t=178s
-voy por 1:37:03
+voy por 2:04:18
+
+Atajos de teclado:
+    imp         import second from 'first'
+    clg         console.log(first)
+    
+    Ctrl+Shit+I     Formato
