@@ -56,7 +56,7 @@
 - Ver: propiedades de FlexBox
 
 https://www.youtube.com/watch?v=_zGL_MU29zs&t=178s
-voy por 2:04:18
+voy por 2:16:42
 
 Atajos de teclado:
     imp         import second from 'first'
