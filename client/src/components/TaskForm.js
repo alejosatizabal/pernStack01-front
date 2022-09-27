@@ -17,14 +17,27 @@ export default function TaskForm() {
     description: ''
   })
 
-  const handleSubmit = e => {
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   //console.log(task);
+  // };
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('submit')
+    //console.log(task);
+
+    await fetch('http://localhost:4000/tasks', {
+      method: 'POST',
+      body: JSON.stringify(task)
+    })
   };
 
   const handleChange = e => {
-    console.log(e.target.name, e.target.value);
+    //console.log(e.target.name, e.target.value);
+    setTask({ ...task, [e.target.name]: e.target.value });
+    //console.log(task);
   }
+  // const handleChange = e =>
+  //   setTask({...task,[e.target.name]:e.target.value});
 
   return (
     <Grid container direction='column' alignItems='center' justifyContent='center'>
