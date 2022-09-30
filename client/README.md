@@ -55,8 +55,12 @@
 
 - Ver: propiedades de FlexBox
 
+- Hook de React: useEffect
+    - Recibe una función como parametro y luego un arreglo para poder volver a ejecutar esta función
+    - useEffect no permite escribir async
+
 https://www.youtube.com/watch?v=_zGL_MU29zs&t=178s
-voy por 2:16:42
+voy por 2:19:15
 
 Atajos de teclado:
     imp         import second from 'first'
